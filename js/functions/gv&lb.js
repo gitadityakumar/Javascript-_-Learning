@@ -17,3 +17,7 @@ sub();
 
 add();
 // console.log(c);
+
+//local function get delted as their scope ends 
+// local variable of same name can be created 
+//global variable of same name can not be created
