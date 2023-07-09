@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Aditya</h1>
+    <ul>
+        <li class="cl">List1</li>
+        <li id="first">List2</li>
+        <li class="cl">List3</li>
+    </ul>
+    <script>
+        let ele = document.getElementsByClassName("cl");
+        for(let i=0; i<ele.length; i++){
+            ele[i].innerHTML="<p>Hello<p>";
+        }
+    </script>
+</body>
+</html>

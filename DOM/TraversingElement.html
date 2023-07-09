@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Traversing Element</h1>
+    <ul>
+        <li id="intro">List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+        <li>List 4</li>
+    </ul>
+
+    <ul>
+        <li>List a</li>
+        <li>List b</li>
+        <li>List c</li>
+        <li>List d</li>
+    </ul>
+
+
+    <script>
+        let lm = document.getElementById("intro");
+        //selecting parent
+        let prt = lm.parentElement;
+        //changing the content of parent element
+        //same can be done for first child and last child 
+        //to select all child use childeren property
+        //selecting sibling(means jo same level per hai)
+        prt.innerHTML="Hello";
+        console.log(prt);
+
+
+    </script>
+
+
+    
+</body>
+</html>

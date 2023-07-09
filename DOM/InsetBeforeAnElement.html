@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Insert before function //very useful to insert an element 
+    <ul id="list">
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+    </ul>
+    <script>
+        /*
+        let list1=document.getElementById("list"); //paretn selcted
+        let item =document.createElement("li");//li created 
+        item.textContent="n_List"; // 
+        // inserting list element
+        // let pos=list1.firstElementChild; //add at first position
+        let pos=list1.firstElementChild.nextElementSibling;//same you can add as man position you want to add 
+
+        list1.insertBefore(item,pos);
+        */
+       //iserting element in body
+       
+       let parent =document.body;
+       let elm= document.createElement("h2");
+       elm.textContent="This is new element";
+       let list=document.getElementById("list");
+       parent.insertBefore(elm,list);
+       
+
+    
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Select an element by "Tag Name"</h1>
+    <ul>
+        <h2>heading 1</h2>
+        <div id="div1"><p1>paragraph 1</p1>
+            <h2>heading 2</h2>
+            <p1>paragraph 2</p1>
+            <h2>heading 3</h2>
+            <p1>paragraph 3</p1></div>
+        
+    </ul>
+    <script>
+        let div1 = document.getElementById("div1");
+        let con = div1.getElementsByTagName("h2");
+        for(let i=0; i<con.length; i++){
+            con[i].innerHTML="Hello";
+        }
+    </script>
+</body>
+</html>

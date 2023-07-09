@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Create and Append Element using Javascript
+    <div id="intro">
+        <p id="p1">Hello this is p tag</p>
+    </div>
+    <script>
+        //slecting element 
+        let elm =document.getElementById("intro");
+        //creating element 
+        let h1=document.createElement('h1');
+
+        //adding class and id to an element 
+
+        h1.className="try pi";
+        h1.id="intro1";
+
+        // let txt = document.createTextNode("this is h1 tag by js");
+        // h1.appendChild(txt);
+        //adding text using property
+
+        h1.textContent="content by textcontent";  //u can also read by this property
+        // elm.appendChild(h1);
+
+        //adding element to body
+
+        document.body.appendChild(h1);
+        /*
+        reading element using textcontent in console
+
+        let pra=document.getElementById("p1");
+        console.log(pra.textContent);           
+
+        */
+
+
+
+
+
+    
+    </script>
+</body>
+</html>
