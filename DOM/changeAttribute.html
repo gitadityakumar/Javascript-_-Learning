@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    ChangeAttributeInJs <br>
+    <button id="btn">Send</button>  
+    <!-- value inside " " called attribute -->
+
+    <script>
+        let btn = document.getElementById("btn");
+        btn.setAttribute("name","form1"); //we can add class name etc
+        //how to know the attribute
+       let a=btn.getAttribute("name");
+    //    console.log(a);
+
+       //remove attribute
+       let rm=btn.removeAttribute("name");
+       //hasAttribute(); check whether an attribue is present or not vlaue will be in boolean
+
+
+
+
+
+    </script>
+
+</body>
+</html>

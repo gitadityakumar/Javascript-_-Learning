@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color{
+            background-color: beige;
+            color: rgb(35, 159, 118);
+
+        }
+        .dim{
+            border: 1px solid red;
+            padding: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Change Css Class in Js </h1><br>
+    <div id="box"  class="color dim">
+        <p>This is  a Dummy text</p>
+    </div>
+    <script>
+        //checking hwo many class are added
+        let box = document.getElementById("box");
+        /*
+        console.log(box.className); //thsi is doing all work
+        //classlist property can also do same work
+        console.log(box.classList);
+        for (let css of box.classList){
+            console.log(css);
+        }
+        */
+       //adding through classList
+       box.classList.add("new");
+       //can remove
+       box.classList.remove("new");
+       //box.classList.replace();  for changing //read mdn
+       //learn more about classList method 
+
+    </script>
+
+</body>
+</html>

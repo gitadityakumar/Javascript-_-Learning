@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Location Object</h1>
+    <button id="btn" onclick="fun()">REDIRECT</button>
+    <script>
+        console.log(location.href);
+        console.log(location.pathname);
+        console.log(location.protocol);
+
+        //Redirecting 
+        function fun(){
+            // window.location ="https://developer.mozilla.org/en-US/";//location.herf can be use for this woek
+            location.assign("https://developer.mozilla.org/en-US/");
+            //.assign put the entry in history
+
+            //location.replace do same as above fn do and it does not add it history matlab back button nahi melega jaane ke liye
+           //location.reload(); reloads the page thsi is useful for banking sites
+           
+
+        }
+
+
+    </script>
+</body>
+</html>

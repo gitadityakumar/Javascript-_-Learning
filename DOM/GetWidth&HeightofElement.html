@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color{
+            background-color: beige;
+            color: rgb(35, 159, 118);
+
+        }
+        .dim{
+            border: 5px solid red;
+            padding: 100px;
+        }
+    </style>
+</head>
+<body>
+<div id="box" class="color dim">
+    <p>this is a dummy text</p>
+</div>
+<script>
+    let box = document.getElementById("box");
+
+    // let width = box.offsetWidth;//border is included
+    // let height = box.offsetHeight;
+
+    //border is not added 
+    let width = box.clientHeight;//border is included
+    let height = box.clientWidth;
+    console.log(width);
+    console.log(height);
+</script>
+</body>
+</html>

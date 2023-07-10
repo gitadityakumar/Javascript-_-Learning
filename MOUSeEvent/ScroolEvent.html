@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        height: 3000px;
+        background-color: antiquewhite;
+    }       
+    </style>
+</head>
+<body>
+    <h1>Scroll  Check
+    </h1>
+    <h2>Hello Aditya</h2>
+    <script>
+        //checking scrolling
+        // window.addEventListener('scroll',function(){
+        //     console.log("scrolling ....")
+        // })
+        // window.addEventListener('wheel',function(event){
+        //     if(event.deltaY <0){
+        //         console.log('scrolling up ...');
+        //     }else if(event.deltaY >0){
+        //         console.log("scrolling down");
+                
+        //     }
+        // })
+        //hwo to detect that scroll has been done till some pixles
+        window.addEventListener('scroll',function(){
+            if(window.pageYOffset > 1500){
+                document.body.style.background="white";
+            }else{
+                document.body.style.background="antiquewhite";
+            }
+        })
+
+    </script>
+
+</body>
+</html>

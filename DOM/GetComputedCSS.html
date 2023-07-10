@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+           background-color: bisque; 
+           color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Get Computed Css</h1>
+    <br>
+    <br>
+    <button id="btn" style="color:rgb(22, 22, 119)">BUTTON</button>  
+    <!-- Inline style over-ride all styles -->
+    <script>
+        let btn = document.getElementById("btn");
+        let css = getComputedStyle(btn);  //suppose u want to change color then at time it is important to save and this work can be sone by this function
+
+        console.log(css.color);
+    </script>
+</body>
+</html>

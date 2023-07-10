@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body{
+            background-color: bisque;
+        } */
+    </style>
+</head>
+<body>
+    <h1>Browser Object Model & Window Object</h1>
+    <button id="btn1">Google</button>
+    <script>
+        //varibale made by var becomes default properties of window object
+        var a=4;
+        console.log(window.a);  //this is prove by this line of code\
+       // alert,confirm,prom are method of window object and it is created by browsers
+       //know inner heigth and width of window
+
+    // console.log(window.innerHeight);
+    // console.log(window.outerHeight);
+    //how to open a new widow
+    let btn= document.getElementById("btn1");
+    let url ="https://developer.mozilla.org/";
+    let feature="height=500 , width=500";
+
+    btn.addEventListener('click',function(){
+        window.open(url,'google',feature);
+    });
+
+
+
+    
+    </script>
+</body>
+</html>

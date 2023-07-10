@@ -1,0 +1,25 @@
+<!-- DOMContentLoaded  -->
+<!-- load -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="img1" src="https://stsci-opo.org/STScI-01G8H1K2BCNATEZSKVRN9Z69SR.png" width="600" alt="random image">
+    <script>
+        window.addEventListener('DOMContentLoaded',function(){
+            console.log("dom tree created");
+        })
+        // window.addEventListener('load',function(){
+        //     console.log("fully loded");
+        // })
+        let img = document.getElementById("img1");
+        img.addEventListener('load',function(){
+            console.log("fully loaded");
+        })
+    </script>
+</body>
+</html>

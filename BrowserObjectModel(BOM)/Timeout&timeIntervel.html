@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Timeout & Timeintervel</h1>
+    <button id="btn">BUTTON</button>
+
+    <script>
+    // let timeoutid =setTimeout(myfunction,3000);
+    // function myfunction(){
+    //     alert(" ");
+
+    // }
+    // if(){
+    //     clearTimeout(timeoutid);
+    // }
+
+
+    //set intervel
+     let id =setInterval(fun,2000);
+    function fun(){
+        console.log("working....");
+    } //also can give timeout
+    let btn1 = document.getElementById("btn");
+    btn1.addEventListener("click",function(){
+        clearInterval(id);
+
+    });
+
+    </script>
+</body>
+</html>

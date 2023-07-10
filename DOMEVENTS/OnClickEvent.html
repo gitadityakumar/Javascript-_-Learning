@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ONCLICK EVENT DEMOSTATION</h1>
+
+    <!-- USING INLINE METHOD -->
+    <!-- <button id="btn"  onclick="btnclick()">BUTTON </button> -->
+    <Button id="btn">BUTTON</Button>
+</body>
+<script>
+    function btnclick(){
+        console.log("clicked");
+    }
+    let btn = document.getElementById("btn");
+
+    btn.addEventListener('click',btnclick); //second parameter can also made by anonymous function
+    //MOUSE OVER
+    btn.addEventListener('mouseover',function(){
+        console.log("Hovring");
+    });
+    btn.addEventListener('mouseout',function(){
+        console.log("mouse is out of btn");
+    });
+</script>
+</html>
